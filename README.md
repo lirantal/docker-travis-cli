@@ -1,3 +1,10 @@
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/lirantal/lirantal%2Fdocker-travis-cli%2Fdocker-travis-cli?branch=master&key=eyJhbGciOiJIUzI1NiJ9.NTgxMjdkMTU3MzhhYTMwMTAwMjg2YWY4.4TkcAYZuKIcjt2ELMIndMUYK3L0pzZWErAzRnRGlDnE&type=cf-1)]( https://g.codefresh.io/pipelines/docker-travis-cli/builds?repoOwner=lirantal&repoName=docker-travis-cli&serviceName=lirantal%2Fdocker-travis-cli&filter=trigger:build~Build;branch:master;pipeline:5bf043d341859180ee3f5e4d~docker-travis-cli)
+[![](https://images.microbadger.com/badges/version/lirantal/travis-cli.svg)](https://microbadger.com/images/lirantal/travis-cli "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/lirantal/travis-cli.svg)](https://microbadger.com/images/lirantal/travis-cli "Get your own image badge on microbadger.com")
+
+
+
+
 # About
 
 One may often need to invoke the Travis CLI such as for encrypting environment variables for Travis CI, yet that requires to use
