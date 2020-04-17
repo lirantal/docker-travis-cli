@@ -22,6 +22,12 @@ commands for the Travis CLI.
 The image's entrypoint is set to the `travis` executable so any command line arguments
 appended to `docker run` will be added to that, providing easy access to users.
 
+## Logging in
+
+```
+docker run --rm -v ${HOME}/.travis:/root/.travis -it lirantal/travis-cli login
+```
+
 ## Encrypting environment variables
 
 When encrypting something, the travis cli needs a way to know what travis repository
@@ -35,7 +41,14 @@ environment variables.
 Example:
 
 ```
-docker run --rm lirantal/travis-cli encrypt ENV_VARIABLE_NAME="GH_TOKEN_GOES_HERE" -r lirantal/dockly
+docker run --rm -v ${HOME}/.travis:/root/.travis lirantal/travis-cli encrypt ENV_VARIABLE_NAME="GH_TOKEN_GOES_HERE" -r lirantal/dockly
+```
+
+Or, to allow it to automatically detect the repository from the current directory:
+
+```
+docker run --rm -v ${HOME}/.travis:/root/.travis lirantal/travis-cli -v ${PWD}:${PWD} --workdir ${PWD} \
+  encrypt ENV_VARIABLE_NAME="GH_TOKEN_GOES_HERE" -r lirantal/dockly
 ```
 
 Documentation Resources:
