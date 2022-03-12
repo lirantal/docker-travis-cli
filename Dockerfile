@@ -1,4 +1,4 @@
-FROM ruby:2.5.1-alpine
+FROM ruby:2.6.9-alpine
 LABEL maintainer="Liran Tal <liran.tal@gmail.com>"
 LABEL description="Travis CLI in a docker container"
 
