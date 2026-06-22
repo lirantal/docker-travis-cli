@@ -75,3 +75,7 @@ docker build --tag lirantal/travis-cli .
 
 # Author
 Liran Tal <liran.tal@gmail.com>
+
+## Documentation
+
+- [Project documentation](./docs/README.md) - development, testing, architecture, and conventions.
